@@ -1,0 +1,8 @@
+- 
+  name: Install Jenkins
+  hosts: l
+  become: yes
+ # become sudo: true
+  roles:
+   - jens_role
+
