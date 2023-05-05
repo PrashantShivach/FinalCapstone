@@ -14,7 +14,7 @@ pipeline {
           }
       stage('Test') {
             steps {
-                sh ' python3 /home/knoldus/Project1/ApartmentVisitorMgmt/manage.py test'
+                sh ' python3 manage.py test'
                 sh 'ls'
           }
       }
