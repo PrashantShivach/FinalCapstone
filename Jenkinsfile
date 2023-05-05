@@ -49,7 +49,7 @@ pipeline {
 
                      sh 'kubectl --kubeconfig=$var1 get pods'
                     sh 'sudo chmod u+x  chnage.sh '
-          sh './FinalCapstone/chnage.sh ${BUILD_NUMBER}'
+          sh '.chnage.sh ${BUILD_NUMBER}'
         sh 'pwd'
         sh 'ls'
           sh 'kubectl --kubeconfig=$var1  --validate=false apply -f deploy.yml'
