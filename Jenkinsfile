@@ -48,11 +48,11 @@ pipeline {
                     withCredentials([file(credentialsId: 'kubeconfig2', variable: 'var1')]) {
 
                      sh 'kubectl --kubeconfig=$var1 get pods'
-                    sh 'sudo chmod u+x  FinalCapstone/chnage.sh '
+                    sh 'sudo chmod u+x  chnage.sh '
           sh './FinalCapstone/chnage.sh ${BUILD_NUMBER}'
         sh 'pwd'
         sh 'ls'
-          sh 'kubectl --kubeconfig=$var1  --validate=false apply -f FinalCapstone/deploy.yml'
+          sh 'kubectl --kubeconfig=$var1  --validate=false apply -f deploy.yml'
 
                       }
               }
