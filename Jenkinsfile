@@ -49,9 +49,8 @@ pipeline {
 
                      sh 'kubectl --kubeconfig=$var1 get pods'
                     sh 'sudo chmod u+x  chnage.sh '
-          sh '.chnage.sh ${BUILD_NUMBER}'
-        sh 'pwd'
-        sh 'ls'
+          sh './chnage.sh ${BUILD_NUMBER}'
+        
           sh 'kubectl --kubeconfig=$var1  --validate=false apply -f deploy.yml'
 
                       }
