@@ -1,1 +1,1 @@
-sed 's/version1/$1' deploy.yaml > new.yaml
+sed "s/version1/$1/g" deploy.yaml > new.yaml
