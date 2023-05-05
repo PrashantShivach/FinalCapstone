@@ -31,7 +31,7 @@ spec:
     app: devlop
   ports:
     - protocol: "TCP"
-      port: 4000
+      port: 4001
       nodePort: 32500
       targetPort: 8000
   type: NodePort 
