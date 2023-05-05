@@ -38,7 +38,7 @@ pipeline {
                  sh 'sudo docker login -u prashantshivach -p ${dockerhubpwd}'
                           }
                   sh 'sudo docker push prashantshivach/image:${BUILD_NUMBER}'
-                  sh 'sudo docker run -dp 4002:8000 prashantshivach/image:${BUILD_NUMBER}'
+                //  sh 'sudo docker run -dp 4002:8000 prashantshivach/image:${BUILD_NUMBER}'
              }
              }
          }
