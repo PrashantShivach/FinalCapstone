@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devlop
-          image: prashantshivach/image:22
+          image: prashantshivach/image:55
         
           ports:
             - containerPort: 8000 
