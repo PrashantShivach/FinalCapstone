@@ -18,11 +18,11 @@ pipeline {
                 sh 'ls'
           }
       }
-        stage('Deploy') {
-            steps {
-                sh 'python3 /home/knoldus/Project1/ApartmentVisitorMgmt/manage.py runserver '
-            }
-        }
+//         stage('Deploy') {
+//             steps {
+//                 sh 'python3 /home/knoldus/Project1/ApartmentVisitorMgmt/manage.py runserver '
+//             }
+//         }
         stage('Build docker image'){
             steps{
                 script{
