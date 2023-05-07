@@ -35,7 +35,7 @@ pipeline {
             steps{
                 script{
                     withCredentials([string(credentialsId: 'dockerhub-ps', variable: 'dockerhub')]) {
-     sh 'sudo docker login -u prashantshivach -p ${dockerhubpwd}'
+     sh 'sudo docker login -u prashantshivach -p ${dockerhub}'
                         sh 'sudo docker push prashantshivach/image:${BUILD_NUMBER}'
                         
 }
