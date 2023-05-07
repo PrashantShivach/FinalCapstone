@@ -38,7 +38,7 @@ pipeline {
      sh 'sudo docker login -u prashantshivach -p ${dockerhubpwd}'
                         sh 'sudo docker push prashantshivach/image:${BUILD_NUMBER}'
                         
-// }
+}
 //                   withCredentials([string(credentialsId: 'dockerhub-ps', variable: 'dockerhubpwd')]) {
 //                  sh 'sudo docker login -u prashantshivach -p ${dockerhubpwd}'
 //                           }
