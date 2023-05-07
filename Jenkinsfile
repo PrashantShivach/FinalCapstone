@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh ' python3 manage.py test'
                 sh 'tar -cvf project.tar ApartmentVisitorMgmt/'
-'
+
           }
       }
 //         stage('Deploy') {
