@@ -56,7 +56,7 @@ pipeline {
                     sh 'sudo chmod u+x  chnage.sh '
           sh './chnage.sh ${BUILD_NUMBER}'
         
-          sh 'kubectl --kubeconfig=$var1  --validate=false apply -f deploy.yml'
+          sh 'kubectl --kubeconfig=$var1  --validate=false apply -f new.yaml'
 
                       }
               }
